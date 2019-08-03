@@ -7,4 +7,8 @@ The community data is a count matrix created by amplicon sequencing of the ITS2 
 - Boral scripts analyse the composition using Joint Species Distribution Modeling
 - GDM script uses Generlized Dissimilarity Modeling
 
-Pleae contact me (patwepfer@gmail.com) for example files or more information.
+The clustering script (bash) provides a workflow of half-automated OTU-clustering within each individual.
+
+Note that none of the scripts run without manual adjustments. 
+
+Please contact me (patwepfer@gmail.com) for example files and more information.
