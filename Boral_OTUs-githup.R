@@ -139,7 +139,7 @@ Xs <- X[,1]  # depth
 Xs <- X[,2]  # SSTmean 
 Xs <- X[,3:4] # clade1
 
-fit.boral.bin.Xi <- boral(y=sub2pa, X = Xs, family = "binomial", num.lv = 2, save.model=TRUE, x)
+fit.boral.bin.Xi <- boral(y=sub2pa, X = Xs, family = "binomial", num.lv = 2, save.model=TRUE)
 save(fit.boral.bin.Xi, file="fit.bin.67samples.depth-190731.RData")
 #load(file="fit.bin.67samples.depth-190731.RData")
 
