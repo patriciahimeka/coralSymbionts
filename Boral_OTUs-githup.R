@@ -88,7 +88,7 @@ head(X)
 ## Widen the hypparameters to use flatter prior distributions due to large counts
 ## Use binomial distribution and presence-absence data (sub2pa)
 
-fit.boral.bin.X <- boral(y=sub2pa, X = X, family = "binomial", num.lv = 2, save.model=TRUE, prior.control = list(hypparams = c(100,100,100,30)), lv.control = list(num.lv = 2))
+fit.boral.bin.X <- boral(y=sub2pa, X = X, family = "binomial", num.lv = 2, save.model=TRUE)
 save(fit.boral.bin.X, file="fit.boral.bin.X.RData")
 #load(file="fit.X.RData") 
 
@@ -139,7 +139,7 @@ Xs <- X[,1]  # depth
 Xs <- X[,2]  # SSTmean 
 Xs <- X[,3:4] # clade1
 
-fit.boral.bin.Xi <- boral(y=sub2pa, X = Xs, family = "binomial", num.lv = 2, save.model=TRUE, prior.control = list(hypparams = c(100,100,100,30)), lv.control = list(num.lv = 2))
+fit.boral.bin.Xi <- boral(y=sub2pa, X = Xs, family = "binomial", num.lv = 2, save.model=TRUE, x)
 save(fit.boral.bin.Xi, file="fit.bin.67samples.depth-190731.RData")
 #load(file="fit.bin.67samples.depth-190731.RData")
 
