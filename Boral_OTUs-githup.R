@@ -6,7 +6,7 @@ library(ggplot2)
 library(mvabund)
 library(corrplot) 
 library(reshape2)
-setwd("/Users/wepfer/Documents/Thesis/Metabarcoding/R/Boral")  # set working directory
+setwd("/path")  # set working directory
 
 #######################################################
 ## DATA ##
